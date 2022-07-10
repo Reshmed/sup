@@ -1,0 +1,159 @@
+@import "vars";
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+ h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+ }
+ p {
+    margin: 0;
+ }
+ button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+ }
+ a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+body {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: $textColor;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header start=========================*/
+
+.header {
+    background-image: url(../images/bg_header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../images/decor.svg);
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 456px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        transform: translateY(35%);
+
+    }
+    &::after {
+        content: "";
+        background-image: url(../images/decor.svg);
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 456px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        transform: translateY(75%) rotate(180deg);
+
+    }
+
+    &__top {
+    padding: 57px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+
+
+    }
+
+    &__btn {
+        padding: 12px 71px;
+        text-transform: uppercase;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        background-color: $textColor;
+        color: #FFFFFF;
+        transition: 0.3s ease;
+        &:hover {
+            color: $textColor;
+            background-color: $active;
+
+        }
+    }
+
+    &__phone {
+        font-family: 'Comfortaa', cursive;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    &__content {
+        min-height: calc(100vh - 160px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    &__content-box {
+        max-width: 550px;
+        margin-right: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 700;
+
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 64px;
+        line-height: 71px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    &__decor-text {
+        position: absolute;
+        top: 0;
+    }
+
+}
+
+.logo path{
+    transition: fill 0.3s ease;
+}
+.logo:hover path {
+    fill: $accent;
+    transition: fill 0.3s ease;
+}
+
+/* Header end=========================*/
+
