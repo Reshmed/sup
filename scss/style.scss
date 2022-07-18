@@ -10,6 +10,11 @@ html {
  h1,h2,h3,h4,h5,h6 {
     margin: 0;
  }
+ ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
  p {
     margin: 0;
  }
@@ -46,6 +51,7 @@ color: $textColor;
     background-repeat: no-repeat;
     min-height: 100vh;
     position: relative;
+    margin-bottom: 80px;
 
     &::before {
         content: "";
@@ -192,3 +198,194 @@ color: $textColor;
 }
 
 /* Header end=========================*/
+
+/* Info start=========================*/
+
+.main {
+}
+.info {
+    background-image: url(../images/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 180px;
+        background-color: $textColor;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-120px);
+        z-index: 1;
+
+
+    }
+
+		&__inner {
+            color: #FFFFFF;
+		}
+
+		&__top {
+            display: flex;
+            gap: 80px;
+            padding-top: 140px;
+            margin-bottom: 70vh;
+
+		}
+
+		&__top-text {
+            padding-top: 245px;
+            width: 290px;
+            position: relative;
+		}
+
+		&__btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+		}
+
+        &__top-text--two {
+            border-bottom: 1px solid #FFFFFF;;
+
+        }
+
+		&__top-img {
+            position: relative;
+            z-index: 6;
+		}
+
+		&__specs {
+            display: flex;
+            align-items: center;
+            gap: 130px;
+            padding-bottom: 50px;
+
+
+		}
+
+		&__specs-title {
+            text-transform: uppercase;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 67px;
+            width: 250px;
+
+		}
+
+		&__specs-list {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff ;
+            font-weight: 700;
+            padding: 30px 0;
+            width: 565px;
+		}
+
+		&__specs-item {
+            display: flex;
+            text-align: start;
+            gap: 25px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+		}
+
+
+		&__specs-caption {
+            width: 185px;
+		}
+
+		&__specs-text {
+		}
+}
+
+.popup-btn {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+
+    & span {
+        color: #FFFFFF;
+        display: block;
+        padding-top: 12px;
+
+    }
+}
+/*Info end===========================*/
+
+/*Buy start==========================*/
+
+.buy {
+    padding: 150px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    &__content {
+        width: 510px;
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-family: 'Comfortaa';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 67px;
+        color: $accent;
+    }
+
+    &__list {
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+        width: 285px;
+        &:hover .buy__item-title {
+            color: $accent;
+        }
+
+    }
+
+    &__item-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        transition: color .3s;
+    }
+
+    &__item-text {
+    }
+
+    &__price {
+    }
+
+    &__btn {
+        font-family: 'Comfortaa';
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        background-color: transparent;
+        border: 2px solid $accent;
+        color: $accent;
+        padding: 18px;
+        max-width: 484px;
+        width: 100%;
+    }
+
+    &__img {
+    }
+}
+
+/*Buy end===============================*/
