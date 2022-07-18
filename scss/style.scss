@@ -331,6 +331,7 @@ color: $textColor;
 
     &__content {
         width: 510px;
+        position: relative;
 
     }
 
@@ -368,6 +369,19 @@ color: $textColor;
     }
 
     &__price {
+        position: absolute;
+        right: 0;
+        bottom: 130px;
+        width: 201px;
+        height: 199px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42;
+        background-image: url(../images/Star\ 1.svg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     &__btn {

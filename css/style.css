@@ -284,6 +284,7 @@ body {
 }
 .buy__content {
   width: 510px;
+  position: relative;
 }
 .buy__title {
   text-transform: uppercase;
@@ -309,6 +310,20 @@ body {
   text-transform: uppercase;
   margin-bottom: 5px;
   transition: color 0.3s;
+}
+.buy__price {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  width: 201px;
+  height: 199px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42;
+  background-image: url(../images/Star\ 1.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .buy__btn {
   font-family: "Comfortaa";
